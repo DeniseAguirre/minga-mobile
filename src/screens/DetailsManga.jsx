@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { View, Text, Image, Button } from "react-native";
 import axios from "axios";
 
-const apiUrl = "https://minga-violeta-back.onrender.com/"; // Asegúrate de proporcionar la URL correcta para tu API
+const apiUrl = "https://minga-violeta-back.onrender.com/";
 
 export default function DetailsManga({ id }) {
  
@@ -22,7 +22,7 @@ export default function DetailsManga({ id }) {
   }, [id]);
 
   if (!manga) {
-    return <Text>Loading...</Text>; // Puedes personalizar el mensaje de carga
+    return <Text>Loading...</Text>; 
   }
 
   return (
